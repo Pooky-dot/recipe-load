@@ -8,7 +8,6 @@ const egg = require('../../assets/egg.png');
 const orange = require('../../assets/orange.png');
 const pizza = require('../../assets/pizza.png');
 const zzigae = require('../../assets/zzigae.png');
-const logo = require('../../assets/logo.png');
 
 const Login = () => {
   const navigation = useNavigation();
@@ -19,7 +18,10 @@ const Login = () => {
       <Text style={styles.mainText}>Recipe Load</Text>
 
       {/* 버튼들 */}
-      <TouchableOpacity style={styles.buttonSecondary}>
+      <TouchableOpacity 
+        style={styles.buttonSecondary}
+        onPress={() => navigation.navigate('LoginScreen')}
+      >
         <Text numberOfLines={1} style={styles.buttonSecondaryText}>
           로그인
         </Text>
