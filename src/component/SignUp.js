@@ -51,7 +51,7 @@ const SignUp = () => {
   }
   setErrors({});
 
-  const apiUrl = 'http://172.21.161.6:8080/api/signup';
+  const apiUrl = 'http://172.30.1.85:8080/api/signup';
 
   try {
     const response = await fetch(apiUrl, {
@@ -132,8 +132,7 @@ const SignUp = () => {
 
 const styles = StyleSheet.create({
   container: {
-    width: 375,
-    height: 812,
+    flex:1,
     backgroundColor: 'white',
     borderRadius: 30,
   },
