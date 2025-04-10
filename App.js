@@ -1,33 +1,12 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Login from './src/component/Login';
-import Signup from './src/component/SignUp';
-import LoginScreen from './src/component/LoginScreen';
-
-const Stack = createStackNavigator();
+import { View } from 'react-native';
+import Components from './src/component/components';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen 
-          name="Login" 
-          component={Login} 
-          options={{ headerShown: false }} 
-        />
-        <Stack.Screen 
-          name="Signup" 
-          component={Signup} 
-          options={{ headerShown: false }} 
-        />
-        <Stack.Screen 
-          name="LoginScreen" 
-          component={LoginScreen} 
-          options={{ headerShown: false }} 
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <View style={{ flex: 1 }}>
+      <Components />
+    </View>
   );
 };
 

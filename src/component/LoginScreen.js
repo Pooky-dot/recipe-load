@@ -9,7 +9,7 @@ const LoginScreen = () => {
   // 로그인 버튼 클릭 핸들러: 백엔드 로그인 API 호출
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://172.30.1.85:8080/api/login', {
+      const response = await fetch('http://172.30.1.41:8080/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

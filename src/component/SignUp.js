@@ -51,7 +51,7 @@ const SignUp = () => {
   }
   setErrors({});
 
-  const apiUrl = 'http://172.30.1.85:8080/api/signup';
+  const apiUrl = 'http://172.30.1.41:8080/api/signup';
 
   try {
     const response = await fetch(apiUrl, {
